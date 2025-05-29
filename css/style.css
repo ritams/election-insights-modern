@@ -163,16 +163,16 @@ section {
   height: 1px;
   padding: 0;
   margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
 /* Header & Navigation */
 header {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: var(--color-gray-200); /* Match original light green background */
   position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+  padding-block: var(--space-md);
+  border-bottom: 2px solid var(--color-primary); /* Match original border style */
+}
   top: 0;
   z-index: 100;
   box-shadow: var(--shadow-sm);
@@ -250,11 +250,11 @@ nav {
 
 .primary-navigation[data-visible="true"] {
   transform: translateX(0);
+/* Hero Section */
+.hero {
+  background-color: var(--color-primary-lighter);
+  padding-block: var(--space-xxl);
 }
-
-.primary-navigation a {
-  color: var(--color-gray-800);
-  font-weight: var(--fw-medium);
   letter-spacing: 0.1em;
 }
 
@@ -287,7 +287,6 @@ nav {
   flex-wrap: wrap;
   gap: var(--space-md);
 }
-
 /* Buttons */
 .btn {
   display: inline-block;
@@ -324,6 +323,7 @@ nav {
 .btn-secondary:hover, .btn-secondary:focus {
   background-color: var(--color-primary-lighter);
   color: var(--color-primary-dark);
+}
 }
 
 /* Mission Section */
