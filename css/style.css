@@ -343,7 +343,7 @@ nav {
 
 /* Key Questions Section */
 .key-questions {
-  background-color: var(--color-gray-100);
+  background-color: var(--color-gray-200);  /* Match original light green background */
   text-align: center;
 }
 
@@ -361,6 +361,7 @@ nav {
   box-shadow: var(--shadow-md);
   transition: transform var(--transition-normal), box-shadow var(--transition-normal);
   text-align: left;
+  border: 2px solid var(--color-primary);  /* Match original border style */
 }
 
 .question-card:hover {
@@ -373,44 +374,43 @@ nav {
   margin-top: var(--space-md);
   font-weight: var(--fw-medium);
   position: relative;
+  color: var(--color-accent);    /* Match original accent color */
 }
 
 .card-link::after {
   content: "→";
   margin-left: 5px;
   transition: transform var(--transition-fast);
-/* Footer */
-footer {
-  background-color: var(--color-primary); /* Match original green background */
-  color: var(--color-gray-200);     /* Match original light text */
-  padding-block: var(--space-xxl);
-  margin-top: auto;                 /* Match original auto margin */
 }
 
-.footer-grid {
+.card-link:hover::after {
+  transform: translateX(5px);
+}
+
+/* Supporters Section */
+.supporters {
+  background-color: var(--color-gray-300);  /* Match original lighter green background */
+  text-align: center;
+}
+
+.supporters-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-xl);
-  margin-bottom: var(--space-xl);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
 }
 
-footer h3 {
-  color: var(--color-gray-100);     /* Match original light text */
-  margin-bottom: var(--space-md);
-  font-size: var(--fs-600);
+.supporter-card {
+  background-color: var(--color-white);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-lg);
+  transition: transform var(--transition-normal);
+  border: 2px solid var(--color-primary);  /* Match original border style */
 }
 
-footer ul {
-  list-style: none;
+.supporter-card:hover {
+  transform: translateY(-5px);
 }
-
-footer li {
-  margin-bottom: var(--space-sm);
-}
-
-footer a {
-  color: var(--color-gray-300);     /* Match original very light green */
-  transition: color var(--transition-fast);
 }
 
 footer a:hover {
