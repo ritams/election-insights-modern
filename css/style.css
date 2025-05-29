@@ -59,6 +59,8 @@ input, textarea, button, select {
 
   /* Typography */
   --ff-primary: 'Poppins', sans-serif;  /* Match original website font */
+  
+  --fs-200: 0.75rem;    /* 12px */
   --fs-300: 0.875rem;   /* 14px */
   --fs-400: 1rem;       /* 16px - Base */
   --fs-500: 1.125rem;   /* 18px */
@@ -68,8 +70,6 @@ input, textarea, button, select {
   --fs-900: 2.5rem;     /* 40px */
   --fs-xl: 3rem;        /* 48px */
   --fs-xxl: 3.5rem;     /* 56px */
-  
-  /* Font weights */
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
