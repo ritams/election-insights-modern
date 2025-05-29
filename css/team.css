@@ -1,0 +1,80 @@
+/* Team Page Styles */
+.page-header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding-block: var(--space-xxl);
+  margin-bottom: var(--space-xxl);
+}
+
+.page-header h1 {
+  color: var(--color-white);
+  margin-bottom: var(--space-sm);
+}
+
+.page-header p {
+  color: var(--color-white);
+  opacity: 0.9;
+  max-width: 800px;
+}
+
+.team-section {
+  padding-top: 0;
+}
+
+.team-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxl);
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.member-image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--space-md);
+}
+
+.member-details h2 {
+  margin-bottom: var(--space-xs);
+}
+
+.member-details h3 {
+  color: var(--color-primary);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-500);
+  margin-bottom: var(--space-md);
+}
+
+/* Media Queries for Team Page */
+@media (min-width: 768px) {
+  .team-member {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .member-image {
+    flex-basis: 300px;
+    flex-shrink: 0;
+  }
+  
+  .member-image img {
+    margin-bottom: 0;
+  }
+}
