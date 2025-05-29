@@ -411,11 +411,15 @@ nav {
 .supporter-card:hover {
   transform: translateY(-5px);
 }
+
+/* Footer */
+footer {
+  background-color: var(--color-primary); /* Match original green background */
+  color: var(--color-gray-200);     /* Match original light text */
+  padding-block: var(--space-xxl);
+  margin-top: auto;                 /* Match original auto margin */
 }
 
-footer a:hover {
-  color: var(--color-white);
-}
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -424,7 +428,7 @@ footer a:hover {
 }
 
 footer h3 {
-  color: var(--color-white);
+  color: var(--color-gray-100);     /* Match original light text */
   margin-bottom: var(--space-md);
   font-size: var(--fs-600);
 }
@@ -438,17 +442,13 @@ footer li {
 }
 
 footer a {
-  color: var(--color-gray-300);
+  color: var(--color-gray-300);     /* Match original very light green */
   transition: color var(--transition-fast);
 }
 
 footer a:hover {
   color: var(--color-white);
 }
-
-.social-links {
-  display: flex;
-  gap: var(--space-md);
   margin-top: var(--space-md);
 }
 
