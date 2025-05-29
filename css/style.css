@@ -182,21 +182,21 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
 .logo a {
   font-size: var(--fs-700);
   font-weight: var(--fw-bold);
-  color: var(--color-gray-800);
+  color: var(--color-gray-900);
   text-decoration: none;
 }
 
 .logo-primary {
   margin-right: 3px;
+  font-weight: var(--fw-bold);  /* Match original font weight */
 }
 
 .logo-accent {
+  color: var(--color-accent);  /* Match original accent color */
+}
   color: var(--color-accent);
 }
 
