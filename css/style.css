@@ -31,34 +31,34 @@ input, textarea, button, select {
 }
 
 /* Custom Properties */
-:root {
-  /* Colors */
-  --color-primary: #2563eb;
-  --color-primary-dark: #1d4ed8;
-  --color-primary-light: #60a5fa;
-  --color-primary-lighter: #dbeafe;
+  /* Colors - Based on original election-insights theme */
+  --color-primary: #4C714D;        /* Original green --clr-bg-500 */
+  --color-primary-dark: #163116;   /* Original dark green --clr-text-900 */
+  --color-primary-light: #e6fada;  /* Original light green --clr-bg-200 */
+  --color-primary-lighter: #f9fdf6; /* Original very light green --clr-bg-100 */
   
-  --color-secondary: #18181b;
-  --color-secondary-light: #27272a;
+  --color-secondary: #163116;      /* Original dark green --clr-text-900 */
+  --color-secondary-light: #4C714D; /* Original green --clr-bg-500 */
   
-  --color-accent: #ef4444;
-  --color-accent-dark: #dc2626;
+  --color-accent: #F55C69;         /* Original warm accent --clr-accent-warm */
+  --color-accent-dark: #e34a57;    /* Slightly darker warm accent */
+  --color-secondary-accent: #6C63FF; /* Original cool accent --clr-accent-cool */
   
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-300: #d1d5db;
+  --color-gray-100: #f9fdf6;       /* Original very light green --clr-bg-100 */
+  --color-gray-200: #e6fada;       /* Original light green --clr-bg-200 */
+  --color-gray-300: #DEF6CF;       /* Original light text --clr-text-200 */
   --color-gray-400: #9ca3af;
   --color-gray-500: #6b7280;
   --color-gray-600: #4b5563;
-  --color-gray-700: #374151;
-  --color-gray-800: #1f2937;
-  --color-gray-900: #111827;
+  --color-gray-700: #4C714D;       /* Original green --clr-text-500 */
+  --color-gray-800: #2a4e2b;       /* Slightly darker green */
+  --color-gray-900: #163116;       /* Original dark green --clr-text-900 */
   
   --color-white: #ffffff;
   --color-black: #000000;
 
   /* Typography */
-  --fs-200: 0.75rem;    /* 12px */
+  --ff-primary: 'Poppins', sans-serif;  /* Match original website font */
   --fs-300: 0.875rem;   /* 14px */
   --fs-400: 1rem;       /* 16px - Base */
   --fs-500: 1.125rem;   /* 18px */
